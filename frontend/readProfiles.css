@@ -1,0 +1,30 @@
+#profiles-body {
+    font-size: 125%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#profiles-display {
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.aCard {
+    background-color: rgb(28, 91, 23);
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 50%;
+    border: 1px solid black;
+}
+
+#profiles-title {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 150%;
+}

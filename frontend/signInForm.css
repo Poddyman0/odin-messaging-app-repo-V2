@@ -1,0 +1,35 @@
+#sign-in-body {
+    font-size: 125%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 5%;
+}
+
+#sign-in-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+#signInForm {
+    background-color: rgb(28, 91, 23);
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 50%;
+    border: 1px solid black;
+}
+
+#password-sign-in {
+    color: white;
+    background-color: rgb(99, 98, 98);
+    border: 1px solid  rgb(99, 98, 98);
+}
+
+#email-sign-in {
+    color: white;
+    background-color: rgb(99, 98, 98);
+    border: 1px solid  rgb(99, 98, 98);
+}

@@ -1,0 +1,22 @@
+#message-body{
+    font-size: 125%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: black;
+}
+
+#message {
+    background-color: rgb(28, 91, 23);
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+}

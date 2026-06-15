@@ -1,0 +1,109 @@
+#conversation-container {
+    background-color: rgb(28, 91, 23);
+    color: white
+}
+
+#messages-container {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+#message-title {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+}
+
+#messages {
+    width: 100%;
+    height: 600px;
+
+}
+
+.user-message {
+    background-color: rgb(22, 61, 15);
+    text-align: right;
+    margin-left: 55%;
+    margin-right: 1%;
+
+    border: 1px solid rgb(133, 131, 131);
+    border-radius: 12px;
+    padding: 20px;
+
+
+}
+
+.participant-message {
+    background-color: rgb(56, 56, 56);
+    text-align: left;
+    border: 10px;
+    border-color: black;
+    margin-right: 55%;
+    margin-left: 1%;
+    border: 1px solid rgb(133, 131, 131);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.conversation-image {
+    width: 15%;
+    height: 15%;
+}
+
+#view-participants {
+    width: 100%;
+    color: white;
+}
+
+#conversation-container {
+    text-align: center;
+    
+}
+
+#aParticipantCard {
+    width: 100%;
+    background-color: rgb(28, 91, 23);
+    color: white;
+    border: 1px solid white;
+
+}
+
+#participants {
+    width:100%;
+    background-color: rgb(28, 91, 23);
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+
+}
+
+#participant-username {
+    color: white
+}
+
+#participant-profileSignedIn {
+    color: white;
+}
+
+#whole-document {
+    color: white;
+    background-color: rgb(28, 91, 23);
+}
+
+.form-control {
+    background-color: rgb(183, 183, 183);
+    color: white;
+    border: 1px solid white;
+ 
+}
+
+.message-input {
+    height: 100px;
+}

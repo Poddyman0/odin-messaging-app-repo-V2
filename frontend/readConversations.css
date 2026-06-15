@@ -1,0 +1,40 @@
+#conversations-body {
+    font-size: 125%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}    
+
+
+#conversations-display {
+    padding: 2%;
+    height: 100%;
+    background-color: black;
+
+}
+
+.card-body {
+    background-color: rgb(28, 91, 23);
+    color: white;
+    border-radius: 12px;
+    padding: 2%;
+    border: 1px solid rgb(28, 91, 23);
+    width: 100%;
+
+}
+
+#conversations-title {
+padding-top: 7%;
+background-color: black;
+color: white;
+text-align: center;
+}
+
+#create-convo-button-container {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+

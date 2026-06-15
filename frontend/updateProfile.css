@@ -1,0 +1,23 @@
+#update-profile-body {
+    font-size: 125%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 7%;
+}
+
+#update-profile-form-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+#update-profile-form {
+    background-color: rgb(28, 91, 23);
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 50%;
+    border: 1px solid black;
+}
