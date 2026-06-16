@@ -10,7 +10,6 @@ const http = require('http');
 const { Server } = require('socket.io');
 const { ObjectId } = require('mongodb');
 require('dotenv').config();
-app.set('trust proxy', 1);
 
 
 const indexRouter = require('./routes/index');
@@ -44,7 +43,7 @@ const limiter = RateLimit({
   windowMs: 1 * 60 * 1000,
   max: 60,
 });
-
+app.use(limiter);
 app.use(limiter);
 app.use(logger('dev'));
 app.use(express.json());
