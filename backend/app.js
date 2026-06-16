@@ -33,6 +33,7 @@ async function main() {
 
 // ---------------- EXPRESS APP ----------------
 const app = express();
+app.set('trust proxy', 1);
 const server = http.createServer(app);
 const io = new Server(server, {
   connectionStateRecovery: {}
@@ -42,8 +43,8 @@ const io = new Server(server, {
 const limiter = RateLimit({
   windowMs: 1 * 60 * 1000,
   max: 60,
+  trustProxy: true,
 });
-app.use(limiter);
 app.use(limiter);
 app.use(logger('dev'));
 app.use(express.json());
