@@ -17,7 +17,7 @@ function readProfiles() {
 
         const userTokenSignedIn = localStorage.getItem('userTokenSignedIn');
 
-        fetch(`http://localhost:3000/messagingApp/profiles/get`, {
+        fetch(`/messagingApp/profiles/get`, {
             method: 'GET',
             headers: {
             'Content-Type': 'application/json',

@@ -22,7 +22,7 @@ function getMessage() {
     const messageID = localStorage.getItem('messageID');
 
 
-    fetch(`http://localhost:3000/messagingApp/message/get/${messageID}/amessage`, {
+    fetch(`/messagingApp/message/get/${messageID}/amessage`, {
         method: 'GET',
         headers: {
         'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ function updateMessage () {
     
         
 
-        fetch(`http://localhost:3000/messagingApp/message/put/${messageID}/messageupdate`, {
+        fetch(`/messagingApp/message/put/${messageID}/messageupdate`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

@@ -28,7 +28,7 @@ function readMessage() {
 
         // set message ID after clicked
 
-        fetch(`http://localhost:3000/messagingApp/message/get/${messageID}/amessage`, {
+        fetch(`/messagingApp/message/get/${messageID}/amessage`, {
             method: 'GET',
             headers: {
             'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ function deleteMessageLink() {
         const userTokenSignedIn = localStorage.getItem('userTokenSignedIn');
         const messageID = localStorage.getItem('messageID');
 
-        fetch(`http://localhost:3000/messagingApp//message/delete/${messageID}`, {
+        fetch(`/messagingApp//message/delete/${messageID}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json", 

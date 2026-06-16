@@ -18,7 +18,7 @@ function getAllProfiles() {
         //const conversationID = localStorage.getItem('conversationID');
         // set message ID after clicked
 
-        fetch(`http://localhost:3000/messagingApp/profiles/get`, {
+        fetch(`/messagingApp/profiles/get`, {
             method: 'GET',
             headers: {
             'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ function getConversation() {
         let conversationID = localStorage.getItem('conversationID')
         // set message ID after clicked
 
-                fetch(`http://localhost:3000/messagingApp/conversation/get/${conversationID}/aconversation`, {
+                fetch(`/messagingApp/conversation/get/${conversationID}/aconversation`, {
                     method: 'GET',
                     headers: {
                     'Content-Type': 'application/json',
@@ -115,7 +115,7 @@ function updateConversation () {
         });
 
 
-        fetch(`http://localhost:3000/messagingApp/conversation/put/${conversationID}/conversationupdate`, {
+        fetch(`/messagingApp/conversation/put/${conversationID}/conversationupdate`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

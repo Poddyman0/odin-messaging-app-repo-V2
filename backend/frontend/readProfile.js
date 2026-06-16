@@ -24,7 +24,7 @@ function readProfile() {
         console.log("userTokenSignedIn", userTokenSignedIn)
 
 
-        fetch(`http://localhost:3000/messagingApp/profile/get/${userId}/aprofileID`, {
+        fetch(`/messagingApp/profile/get/${userId}/aprofileID`, {
             method: 'GET',
             headers: {
             'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ function deleteProfileLink() {
         const userId = localStorage.getItem('userIDSignedIn');
         const userTokenSignedIn = localStorage.getItem('userTokenSignedIn');
 
-        fetch(`http://localhost:3000/messagingApp/profile/delete/${userId}`, {
+        fetch(`/messagingApp/profile/delete/${userId}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json", 
@@ -104,7 +104,7 @@ function signOutButton() {
         const signOutProfileBD ={
 
         }
-        fetch(`http://localhost:3000/messagingApp/profile/put/signout/${userId}/JWTBycrypt`, {
+        fetch(`/messagingApp/profile/put/signout/${userId}/JWTBycrypt`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json", 
@@ -122,7 +122,7 @@ function signOutButton() {
                     console.log("response 2", userId)
 
                     //
-                    fetch(`http://localhost:3000/messagingApp/profile/put/signout/${userId}/passport`, {
+                    fetch(`/messagingApp/profile/put/signout/${userId}/passport`, {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json"

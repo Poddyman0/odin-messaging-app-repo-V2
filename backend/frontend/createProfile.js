@@ -7,7 +7,7 @@ function getFriends () {
     const addFriendRadioContainer = document.getElementById('add-friends-radio-container')
     const userId = localStorage.getItem('userIDSignedIn');
     const userTokenSignedIn = localStorage.getItem('userTokenSignedIn');
-    fetch(`http://localhost:3000/messagingApp/profiles/get`, {
+    fetch(`/messagingApp/profiles/get`, {
         method: 'GET',
         headers: {
         'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ function signUpForm () {
         });
         console.log("createProfileBE", createProfileBE)
 
-        fetch('http://localhost:3000/messagingApp/profile/post', {
+        fetch('/messagingApp/profile/post', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json", 

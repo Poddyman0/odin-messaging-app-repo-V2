@@ -27,7 +27,7 @@ function readConversation() {
         let conversationID = localStorage.getItem('conversationID')
         // set message ID after clicked
 
-        fetch(`http://localhost:3000/messagingApp/conversation/get/${conversationID}/aconversation`, {
+        fetch(`/messagingApp/conversation/get/${conversationID}/aconversation`, {
             method: 'GET',
             headers: {
             'Content-Type': 'application/json',
@@ -128,7 +128,7 @@ function createMessage () {
             messageSentByProfile: userId,
             conversationID: conversationID
         }
-        fetch('http://localhost:3000/messagingApp/message/post', {
+        fetch('/messagingApp/message/post', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json", 
@@ -160,7 +160,7 @@ function deleteConversationLink() {
         const userTokenSignedIn = localStorage.getItem('userTokenSignedIn');
         let conversationID = localStorage.getItem('conversationID')
 
-        fetch(`http://localhost:3000/messagingApp/conversation/delete/${conversationID}`, {
+        fetch(`/messagingApp/conversation/delete/${conversationID}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json", 

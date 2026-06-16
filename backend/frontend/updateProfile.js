@@ -18,7 +18,7 @@ function getFriends() {
     const addFriendRadioContainer = document.getElementById('add-friends-radio-container')
     const userId = localStorage.getItem('userIDSignedIn');
     const userTokenSignedIn = localStorage.getItem('userTokenSignedIn');
-    fetch(`http://localhost:3000/messagingApp/profiles/get`, {
+    fetch(`/messagingApp/profiles/get`, {
         method: 'GET',
         headers: {
         'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ function getProfile() {
     const userId = localStorage.getItem('userIDSignedIn');
     const userTokenSignedIn = localStorage.getItem('userTokenSignedIn');
 
-    fetch(`http://localhost:3000/messagingApp/profile/get/${userId}/aprofileID`, {
+    fetch(`/messagingApp/profile/get/${userId}/aprofileID`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json", 
@@ -122,7 +122,7 @@ function updateProfile () {
         console.log("UDPF", updateProfileBE)
 
 
-        fetch(`http://localhost:3000/messagingApp/profile/put/${userId}/profileupdate`, {
+        fetch(`/messagingApp/profile/put/${userId}/profileupdate`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

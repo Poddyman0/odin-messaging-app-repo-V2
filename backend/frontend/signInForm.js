@@ -14,7 +14,7 @@ function signInForm() {
         let responseProfileID = ""
         console.log("emailSignIn.value", emailSignIn.value)
         console.log("encodeURIComponent(emailSignIn.value)",  encodeURIComponent(emailSignIn.value))
-        fetch(`http://localhost:3000/messagingApp/profile/get/aprofileEmail/${encodeURIComponent(emailSignIn.value)}`, {
+        fetch(`/messagingApp/profile/get/aprofileEmail/${encodeURIComponent(emailSignIn.value)}`, {
             method: 'GET', 
             headers: {
             'Content-Type': 'application/json',
@@ -24,7 +24,7 @@ function signInForm() {
         .then(response => {
             console.log("1", response)
             responseProfileID = `${response.profile[0]._id}`
-            fetch(`http://localhost:3000/messagingApp/profile/put/signin/${response.profile[0]._id}/JWTBycrypt`, {
+            fetch(`/messagingApp/profile/put/signin/${response.profile[0]._id}/JWTBycrypt`, {
                 method: 'POST',
                 headers: {
                 'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ function signInForm() {
                 localStorage.setItem('userIDSignedIn', response.userIDSignInCreated);
                 localStorage.setItem('userTokenSignedIn', response.token); 
                 //
-                fetch(`http://localhost:3000/messagingApp/profile/put/signin/${responseProfileID}/passport`, {
+                fetch(`/messagingApp/profile/put/signin/${responseProfileID}/passport`, {
                 method: 'POST',
                 headers: {
                 'Content-Type': 'application/json',

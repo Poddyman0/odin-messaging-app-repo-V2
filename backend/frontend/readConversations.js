@@ -19,7 +19,7 @@ function readConversations() {
         console.log("hi")
         const userTokenSignedIn = localStorage.getItem('userTokenSignedIn');
 
-        fetch(`http://localhost:3000/messagingApp/conversation/get/conversations/${userId}`, {
+        fetch(`/messagingApp/conversation/get/conversations/${userId}`, {
             method: 'GET',
             headers: {
             'Content-Type': 'aapplication/json',
